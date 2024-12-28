@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/get-Ivyied/static/css/main.68ba31a1.css",
+    "main.js": "/get-Ivyied/static/js/main.fd2701a1.js",
+    "static/js/453.76479d84.chunk.js": "/get-Ivyied/static/js/453.76479d84.chunk.js",
+    "index.html": "/get-Ivyied/index.html",
+    "main.68ba31a1.css.map": "/get-Ivyied/static/css/main.68ba31a1.css.map",
+    "main.fd2701a1.js.map": "/get-Ivyied/static/js/main.fd2701a1.js.map",
+    "453.76479d84.chunk.js.map": "/get-Ivyied/static/js/453.76479d84.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68ba31a1.css",
+    "static/js/main.fd2701a1.js"
+  ]
+}
