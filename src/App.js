@@ -37,7 +37,23 @@ const messages = {
     "Chances are high, my friend! Looks like you’re almost a lock for this."
   ]
 };
+const gifs = {
+  low: [
+    "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExODByZGlwa3B1NDB4Y3l5YWFjMmU3b3BpMHVudGVkYmdsZWVndzl4dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT77XTpyEzJ4OJO06c/200w.webp",
+ "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm85d2M0eHdmcmx6ZGUwOWtiZnJpOHVmcGtuc2V4aDR4bHR2ZHZ5OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7aD4kZn5k0SEvPmo/giphy.gif"
+  ,"https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWtwc2s1azhkNzNwaGl4YXJkNm9ra2lhYmV3d2Q4ZXJ6amJ1a29oayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IgEJTULuuOKT7uU/giphy.gif"],
+  medium: [
+    "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG9rMGNvYmZsMGZlcmNrcmVidWwwc2p5Nmw3amp2b3Q0dGZ1dzFoOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PVfSR2nddzGz6/giphy.gif",
+    "https://media2.giphy.com/media/Jq824R93JsLwZCaiSL/giphy.webp?cid=790b7611o52gcbzsl83o8tmx93ismar31sgvuphgx5506qr0&ep=v1_gifs_search&rid=giphy.webp&ct=g",
+    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDJkdGZ4OXNzaXRvN2E1cXBkZGljazVwMHY1eXpuNnZ2ZzVhMHdkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2shcp5tWbz1rIk1dUR/giphy.gif"
 
+  ],
+  high: [
+    "https://media2.giphy.com/media/SiGg4zSmwmbafTYwpj/giphy.webp?cid=790b7611ynwdjbe8gc6mpn73dk8226kevpk8bhhg2lqyhc4r&ep=v1_gifs_search&rid=giphy.webp&ct=g",
+    "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmtoY2lxb3BuY3hxY3BwdDI1ZWVlYzhvdGVuNHZjM3FocmFlYWppayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iDMfrlspB76gbZRlKY/giphy.gif",
+    "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnQwamYzeHRkZGhzYXNra3VqbGpsb2E4dzIza2llcjNzaGN1dHVxNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JfkLZdsOZpBSg/giphy.gif"
+  ]
+};
 function App() {
   const [gpa, setGpa] = useState('');
   const [gpaInternational, setGpaInternational] = useState('');
@@ -100,13 +116,13 @@ function App() {
     let randomMessage;
     if (admissionChance < 40) {
       randomMessage = messages.low[Math.floor(Math.random() * messages.low.length)];
-      setImageUrl("https://www.kindpng.com/picc/m/81-812989_oof-sound-effect-image-png-transparent-png.png"); // Low chance image
+      setImageUrl(gifs.low[Math.floor(Math.random() * gifs.low.length)]);
     } else if (admissionChance < 70) {
       randomMessage = messages.medium[Math.floor(Math.random() * messages.medium.length)];
-      setImageUrl("https://media.giphy.com/media/hWDo6x1chJb1y/giphy.gif"); // Medium chance image
+      setImageUrl(gifs.medium[Math.floor(Math.random() * gifs.low.length)]); // Medium chance image
     } else {
       randomMessage = messages.high[Math.floor(Math.random() * messages.high.length)];
-      setImageUrl("https://media.giphy.com/media/3o6MbnF4qsCai28Qmu/giphy.gif"); // High chance image
+      setImageUrl(gifs.high[Math.floor(Math.random() * gifs.low.length)]); // High chance image
     }
 
     // Display result
