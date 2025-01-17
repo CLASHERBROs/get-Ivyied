@@ -1,0 +1,151 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.App {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1e3d58;
+  font-weight: bold;
+}
+
+.form-group {
+  margin: 15px 0;
+  text-align: left;
+}
+
+label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #1e3d58;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+button.submit-btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+  background-color: #d35f4c;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1e3d58;
+}
+
+.result-message {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #d35f4c;
+}
+
+/* Modal Styling */
+.result-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px); /* Blurred background */
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.result-message-popup {
+  font-size: 1.5rem;
+  color: #1e3d58;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.result-image {
+  width: 100%;
+  height: 20%;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #d35f4c;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #1e3d58;
+}
+
+.footer-link {
+  color: #ff6f61;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 20px;
+    width: 90%;
+  }
+}
